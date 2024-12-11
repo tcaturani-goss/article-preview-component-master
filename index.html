@@ -4,57 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Article preview component</title>
-
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Main Card for Mobile/Desktop -->
-  <div class="main-card-container">
-    <img src="drawers.jpg" alt="header img on main card" class="main-card-header-img">
-    <div class="main-card-text-container">
-      <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
-      <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
-      <div class="main-card-footer">
-        <div class="user-info-container">
-          <img src="avatar-michelle.jpg" alt="michelle-avatar-img" class="michelle-avatar-img">
-          <div class="footer-text-container">
-            <h2>Michelle Appleton</h2>
-            <p class="footer-paragraph-text">28 Jun 2020</p>
+  <main>
+    <!-- Main Card for Mobile/Desktop -->
+    <article class="main-card-container">
+      <img src="drawers.jpg" alt="Header image of a drawer" class="main-card-header-img">
+      <div class="main-card-text-container">
+        <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+          I’ve got some simple tips to help you make any room feel complete.
+        </p>
+        <footer class="main-card-footer">
+          <div class="user-info-container">
+            <img src="avatar-michelle.jpg" alt="Avatar of Michelle Appleton" class="michelle-avatar-img">
+            <div class="footer-text-container">
+              <h2>Michelle Appleton</h2>
+              <p class="footer-paragraph-text">28 Jun 2020</p>
+            </div>
           </div>
-        </div>
-        <div class="share-icon-container" id="shareBtnBg">
-          <button id="shareButton" class="share-button">
-            <img src="icon-share.svg" alt="share-icon" id="shareIcon" class="share-icon">
-          </button>
-        </div>
+          <div class="share-icon-container" id="shareBtnBg">
+            <button id="shareButton" class="share-button">
+              <img src="icon-share.svg" alt="Share icon" id="shareIcon" class="share-icon">
+            </button>
+          </div>
+        </footer>
       </div>
-    </div>
+    </article>
 
     <!-- Social Box for Mobile -->
-    <div id="socialBox" class="hidden">
+    <section id="socialBox" class="hidden" aria-label="Social Media Links">
       <div class="social-media">
         <h3>SHARE</h3>
-        <a href="https://facebook.com" target="_blank"><img src="icon-facebook.svg" alt="Facebook" class="facebook-icon"></a>
-        <a href="https://twitter.com" target="_blank"><img src="icon-twitter.svg" alt="Twitter" class="twitter-icon"></a>
-        <a href="https://pinterest.com" target="_blank"><img src="icon-pinterest.svg" alt="Pinterest" class="pinterest-icon"></a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="icon-facebook.svg" alt="Facebook" class="facebook-icon">
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <img src="icon-twitter.svg" alt="Twitter" class="twitter-icon">
+        </a>
+        <a href="https://pinterest.com" target="_blank" aria-label="Pinterest">
+          <img src="icon-pinterest.svg" alt="Pinterest" class="pinterest-icon">
+        </a>
       </div>
-    </div>
+    </section>
 
     <!-- Desktop Blimp -->
-    <div id="desktopBlimp">
+    <section id="desktopBlimp" aria-label="Desktop Social Share">
       <div class="desktop-blimp-flex-container">
-      <h3>SHARE</h3>
-      <a href="https://facebook.com" target="_blank"><img src="icon-facebook.svg" alt="Facebook" class="facebook-icon"></a>
-      <a href="https://twitter.com" target="_blank"><img src="icon-twitter.svg" alt="Twitter" class="twitter-icon"></a>
-      <a href="https://pinterest.com" target="_blank"><img src="icon-pinterest.svg" alt="Pinterest" class="pinterest-icon"></a>
+        <h3>SHARE</h3>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <img src="icon-facebook.svg" alt="Facebook" class="facebook-icon">
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <img src="icon-twitter.svg" alt="Twitter" class="twitter-icon">
+        </a>
+        <a href="https://pinterest.com" target="_blank" aria-label="Pinterest">
+          <img src="icon-pinterest.svg" alt="Pinterest" class="pinterest-icon">
+        </a>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>

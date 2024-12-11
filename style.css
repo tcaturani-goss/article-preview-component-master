@@ -51,13 +51,19 @@ body {
     opacity: 0.2;
     display: none;
 }
+
+main {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .main-card-container {
     position: relative;
     width: 20.4375rem;
     height: 32rem;
-    overflow: hidden;
-    background-color: var(--main-container-background-color);
     border-radius: 10px;
+    background-color: var(--main-container-background-color);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .main-card-header-img {
@@ -226,12 +232,17 @@ h3 {
 
   /* Desktop Layout Begins */
 
-  @media only screen and (min-width: 90em) { 
+  @media only screen and (min-width: 64em) { 
+
+    main {
+      overflow: visible;
+    }
+
     .main-card-container {
+        position: relative;
         display: flex;
         width: 45.625rem;
         height: 17.5rem;
-        overflow: visible;
     }
 
     .main-card-header-img {
@@ -281,13 +292,13 @@ h3 {
     }
   }
 
-  @media only screen and (max-width: 89em) {
+  @media only screen and (max-width: 64em) {
     #desktopBlimp {
         display: none !important; /* Hide blimp on mobile */
     }
   }
 
-  @media only screen and (min-width: 89em) {
+  @media only screen and (min-width: 64em) {
     #socialBox {
         display: none !important; /* Hide social box on desktop */
     }
