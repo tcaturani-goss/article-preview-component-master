@@ -3,7 +3,7 @@ const socialBox = document.getElementById('socialBox');
 const desktopBlimp = document.getElementById('desktopBlimp');
 
 // Function to check if the layout is desktop or mobile
-const isDesktopLayout = () => window.matchMedia('(min-width: 90em)').matches;
+const isDesktopLayout = () => window.matchMedia('(min-width: 64em)').matches;
 
 // Toggle visibility logic for desktop blimp and mobile social box
 shareButton.addEventListener('click', (e) => {
